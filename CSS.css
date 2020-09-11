@@ -1,0 +1,205 @@
+ body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #190b41;
+            text-align: center;
+            font-family: consolas;
+            min-height: 100vh;
+            }
+        #Game {
+            display: none;
+            text-align: center;
+        }
+        #screen {
+            margin: 40px;
+            border: 5px solid gray;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            box-shadow: 0 0 10px lightgray, 0 0 40px lightgray, 0 0 80px lightgray; 
+        }
+        h1{
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-family: consolas;
+            text-shadow: 0px -1px 3px lightgray, 0px 1px 3px lightgray,-1px 0px 3px lightgray, 1px 0px 3px lightgray,
+        -6px 0px 10px lightgray, 6px 0px 10px lightgray, 0px -6px 10px lightgray, 0px 6px 10px lightgray;
+            
+        }
+        button {
+            width: 250px;
+            height: 65px;
+            margin: 19px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 18px;
+            overflow: hidden;
+            transition: 0.5s;
+            background-color: #2196f3;
+            border-radius: 25px;
+            border-style: none;
+            color: #ffffff;
+        text-shadow: 0px -1px 2px lightgray, 0px 1px 2px lightgray,-1px 0px 2px lightgray, 1px 0px 2px lightgray,
+        -6px 0px 8px lightgray, 6px 0px 8px lightgray, 0px -6px 8px lightgray, 0px 6px 8px lightgray;
+            }
+        button:hover{
+            color: #000000;
+            background: #9fd3fd;
+            box-shadow: 0 0 10px #9fd3fd, 0 0 40px #9fd3fd, 0 0 80px #9fd3fd; 
+            transition-delay: 0.2;
+            font-weight: bold;
+            text-shadow: none;
+            cursor: pointer;
+        }
+        #SkillImg{ 
+            width: 300px;
+            height: 300px;
+            float: left;
+        }
+        #Pause {
+            display: none;
+            background-color: #ffffff;
+            border:solid 2px #190b41;
+            width: 100%;
+            position: fixed;
+            opacity: 0.9;
+            box-shadow:-3px 0px 30px 0px #190b41 inset, 3px 0px 30px 0px #190b41 inset, 0px -3px 30px 0px #190b41 inset, 0px 3px 30px 0px #190b41 inset;
+        }
+        #pausedH1
+        {color: #ffffff;
+        text-shadow: 0px -1px 3px #2196f3, 0px 1px 3px #2196f3,-1px 0px 3px #2196f3, 1px 0px 3px #2196f3, -6px 0px 10px #2196f3, 6px 0px 10px #2196f3, 0px -6px 10px #2196f3, 0px 6px 10px #2196f3;
+        }
+        #BntResume{
+            display: none;
+        }
+        .PauseButton {
+            width: 200px;
+            height: 50px;
+            margin: 5px;
+            margin-top: 15px;
+        }
+
+    #blueblock{
+        background-color: aqua;
+        width: 20px;
+        height: 20px;
+        float: left;
+    }    
+    #yellowblock{
+        background-color: yellow;
+        width: 20px;
+        height: 20px;
+        float: left;
+    }
+    .p2Info{
+        display: none;
+    }
+.lblSkill{
+    text-decoration: underline;
+    font: bold;
+}
+#clearScore{
+    opacity: 0.9;
+    color:#94c7f7;;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#clearScore:hover {
+    font-weight: bold;
+    color:#ffffff;
+    cursor: pointer;
+}
+a{
+    color:#94c7f7;
+    transition: 0.5s;
+}
+a:hover {
+    font-weight: bold;
+    color:#ffffff;
+}
+.MyLinks{
+    color:#ffffff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+[class*="col-"] {
+
+  padding: 15px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+  .col-s-13 {height: 320px; margin-top: -100px;}
+  .col-s-14 {width: 91.66%; margin-left: 0px;}
+  .col-s-15 {display: none;}
+  .col-s-16 {margin-left: 0px;}
+}
+@media only screen and (min-width: 920px) {
+  /* For desktop: */
+  .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+  .col-md-13 {height: 180px; margin-top: 0%;}
+  .col-md-14 {width: 50%; margin-left: 350px;}
+  .col-md-15 {display: none;}
+  .col-md-16 {margin-left: 0px;}
+
+}
+@media only screen and (min-width: 1030px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .col-13 {height: 180px;}
+  .col-14 {width: 50%; margin-left: 150px;}
+  .col-15 {display: block;}
+  .col-16 {margin-left: 150px;}
+  .col-17 {width: 16.66%; float: right;}
+}
